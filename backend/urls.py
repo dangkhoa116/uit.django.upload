@@ -1,4 +1,4 @@
-"""tutorial URL Configuration
+"""backend URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -18,7 +18,7 @@ from django.urls import path
 
 from django.conf.urls import url, include
 from rest_framework import routers
-from tutorial.quickstart import views
+from backend.quickstart import views
 
 router = routers.DefaultRouter()
 router.register('users', views.UserViewSet)
